@@ -2,8 +2,6 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
-import WelcomeApp from '../components/apps/welcome'
-import MovieSection from '../components/sections/movies'
 import { getFunnyResponse, Questions } from "../questions"
 const Home: NextPage = () => {
   const [amount, setAmount] = useState(0)
