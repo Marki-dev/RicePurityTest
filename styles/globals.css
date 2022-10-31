@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-[#181a1b];
+    overflow-x: hidden;
+
+}
+
+.moviePoster {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #202324;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #5b6367;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #5b636773;
+}
