@@ -26,10 +26,16 @@ const Home: NextPage = () => {
             </div>
           </div>
         }
+        <div className='text-center flex items-center justify-center flex-col gap-3'>
+          <p className='text-6xl font-bold'>The Rice Purity Test</p>
+          <p className='w-2/3 md:w-1/2'>The Purity Test has historically served as a segue from O-week to true college life at Rice.
+            It's a voluntary opportunity for O-week groups to bond, and for students to track the maturation
+            of their experiences throughout college.</p>
+          <p className='font-bold'>Caution: This is not a bucket list. Completion of all items on this test will likely result in death.</p>
+          <p>Click on every item you have done. MPS stands for Member of the Preferred Sex.</p>
+        </div>
         <div className='grid md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-10 gap-3 auto-rows-fr m-10'>
-          <div className='fixed'>
-            {amount}
-          </div>
+
           {Questions.map((item, index) => {
             const [selected, setSelected] = useState(false)
             function click() {
@@ -38,7 +44,7 @@ const Home: NextPage = () => {
               setSelected(!selected)
             }
             return (
-              <div key={index} onClick={click} className={`bg-gray-800 rounded-md p-5 border-8 ${selected ? "border-green-500" : "border-[#2c3847]"}`}>
+              <div key={index} onClick={click} className={`bg-gray-800 rounded-md p-5 max-w-[80vw] border-8 ${selected ? "border-green-500" : "border-[#2c3847]"}`}>
                 <p className='font-black'>{index + 1}</p>
                 <p>{item}</p>
               </div>
