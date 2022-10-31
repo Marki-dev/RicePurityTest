@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   return (
     <div className='overflow-'>
       <Head>
-        <title>Create Next App</title>
+        <title>Rice Purity Test</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className='w-screen h-screen overflow-x-hidden'>
