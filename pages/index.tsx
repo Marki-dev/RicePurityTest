@@ -32,6 +32,11 @@ const Home: NextPage = () => {
           <p className='font-bold'>Caution: This is not a bucket list. Completion of all items on this test will likely result in death.</p>
           <p>Click on every item you have done. MPS stands for Member of the Preferred Sex.</p>
         </div>
+        <div className='flex items-center justify-center w-screen'>
+          <div onClick={() => setShowResults(!showResults)} className='p-3 bg-[#2ea44f] text-3xl font-bold rounded-md hover:bg-opacity-80 text-center'>
+            Submit
+          </div>
+        </div>
         <div className='grid md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-10 gap-3 auto-rows-fr m-10'>
 
           {Questions.map((item, index) => {
@@ -52,7 +57,6 @@ const Home: NextPage = () => {
             <div onClick={() => setShowResults(!showResults)} className='p-3 bg-[#2ea44f] text-3xl font-bold rounded-md hover:bg-opacity-80 text-center'>
               Submit
             </div>
-
           </div>
         </div>
       </div>
