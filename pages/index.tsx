@@ -1,7 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useState } from 'react'
+import { FaGithub } from "react-icons/fa"
 import { getFunnyResponse, Questions } from "../questions"
 const Home: NextPage = () => {
   const [amount, setAmount] = useState(0)
@@ -59,8 +61,15 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
+        <div className='flex items-center justify-center gap-3 mb-10'>
+          <Link href={"https://github.com/ThykeAdams/RicePurityTest"}>
+            <div className='flex items-center gap-3 text-3xl text-gray-400 hover:border-b-2 border-gray-400'>
+              <FaGithub />
+              <p>Github</p>
+            </div>
+          </Link>
+        </div>
       </div >
-      {/* <MovieSection /> */}
     </div >
   )
 }
