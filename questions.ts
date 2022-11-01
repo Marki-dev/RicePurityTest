@@ -102,6 +102,7 @@ export const Questions = [
 ]
 
 export function getFunnyResponse(score: number) {
+    score = 100 - score
     if (score > 98) return "You Pretty Little Angel"
     if (score > 90) return "Still an Angel"
     if (score > 85) return "What a Nice Child..."
